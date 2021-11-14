@@ -18,12 +18,12 @@ def print_grid(grid_value, hide_ships):
             index_value=(letter*10)+values
             if values!=9:
                 if grid_value[index_value] == '%' and hide_ships==1:
-                    print(f' |', end='')
+                    print(' |', end='')
                 else:
                     print(f'{grid_value[index_value]}|', end='')
             elif values==9:
                 if grid_value[index_value] == '%' and hide_ships==1:
-                    print(f' |')
+                    print(' |')
                 else:
                     print(f'{grid_value[index_value]}|')
                 
