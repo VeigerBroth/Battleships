@@ -26,6 +26,11 @@ def print_grid(grid_value, hide_ships):
                     print(' |')
                 else:
                     print(f'{grid_value[index_value]}|')
+                    
+                    
+def print_grid_legend():
+    print('/ - shooted ship  | X - destroy entry ship')
+    print('* - missing field | % - your ships')
                 
                 
                 
@@ -43,7 +48,9 @@ def main(args):
     
     print_grid(player_grid, 1) # print_grid
  
-    print_grid(pc_grid, 1)
+    print_grid(pc_grid, 0)
+    
+    print_grid_legend()
     
     return 0
 
